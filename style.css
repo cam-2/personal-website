@@ -26,19 +26,19 @@ nav {
 
 .menu {
 
+    box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    gap: 2rem;
-    z-index: 5;
+    align-items:center;
+    justify-content: flex-end;
+    width: 99%;
+    gap: 1.25rem;
 }
 
-nav .about {
+a {
     
-    font-size: 1.05rem;
+    font-size: 1.15rem;
     text-decoration: none;
     color: white;
     position: relative;
@@ -51,17 +51,17 @@ nav .about {
     opacity: .6;
 }
 
-nav .about:hover {
+a:hover {
 
     filter: brightness(125%);
     opacity: 1;
     box-shadow: 0 0 4px #ae00ff, 0 0 40px rgba(255, 255, 255, 0.5);
     transition: transform 0.2s ease-in-out;
-    transform: scale(1.03);
+    transform: scale(1.02);
 
 }
 
-nav .about:active {
+a:active {
 
     transition: transform .1s;
     transform: scale(.95);
@@ -76,6 +76,6 @@ h1 {
     position: relative;
     font-family: Montserrat;
     color: white;
-    font-size: 8em;
+    font-size: 7.75em;
     text-align: center;
 }
