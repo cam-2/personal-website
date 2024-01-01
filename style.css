@@ -38,22 +38,27 @@ nav {
 
 nav .about {
     
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     text-decoration: none;
     color: white;
     position: relative;
-    border: 3px solid white;
+    font-weight: lighter;
+    border: 2px solid white;
     padding: 1.25ch 2.5ch;
-    border-radius: 2.2ch;
-    box-shadow: 0 0 4px #e595ff, 0 0 48px rgba(255, 255, 255, 0.5);
-    transition: background .4s linear;
+    border-radius: 1.7ch;
+    transition: filter .45s, transform .45s, opacity .45s;
     will-change: background;
+    opacity: .6;
 }
 
 nav .about:hover {
 
     filter: brightness(125%);
     opacity: 1;
+    box-shadow: 0 0 4px #ae00ff, 0 0 40px rgba(255, 255, 255, 0.5);
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.03);
+
 }
 
 nav .about:active {
@@ -62,20 +67,9 @@ nav .about:active {
     transform: scale(.95);
 }
 
-nav .about::before {
-
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: radial-gradient(190.82% 190.82% at 50% 100%, rgb(188, 187, 189) 0%, rgba(199, 176, 198, 0.62) 18.09%);
-    opacity: .2;
-    filter: blur(2px);
-
-}
-
 body {
 
-    background: linear-gradient(100deg, rgb(25, 25, 25) 25%, rgb(40, 40, 40) 100%);
+    background: linear-gradient(91deg, rgb(25, 25, 25) 25%, rgb(40, 40, 40) 100%);
 }
 
 h1 {
