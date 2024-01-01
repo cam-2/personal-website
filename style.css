@@ -1,9 +1,87 @@
 @font-face {
-    font-family: Montserrat;
     src: url(fonts/Montserrat-Light.ttf);
+    font-family: Montserrat;
 }
 
 @font-face {
-    font-family: Quicksand;
     src: url(fonts/Quicksand-Light.ttf);
+    font-family: Quicksand;
+}
+
+nav {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    box-sizing: border-box;
+
+}
+
+*{
+
+    font-family: Montserrat, Quicksand;
+}
+
+.menu {
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    z-index: 5;
+}
+
+nav .about {
+    
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    position: relative;
+    border: 3px solid white;
+    padding: 1.25ch 2.5ch;
+    border-radius: 2.2ch;
+    box-shadow: 0 0 4px #e595ff, 0 0 48px rgba(255, 255, 255, 0.5);
+    transition: background .4s linear;
+    will-change: background;
+}
+
+nav .about:hover {
+
+    filter: brightness(125%);
+    opacity: 1;
+}
+
+nav .about:active {
+
+    transition: transform .1s;
+    transform: scale(.95);
+}
+
+nav .about::before {
+
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(190.82% 190.82% at 50% 100%, rgb(188, 187, 189) 0%, rgba(199, 176, 198, 0.62) 18.09%);
+    opacity: .2;
+    filter: blur(2px);
+
+}
+
+body {
+
+    background: linear-gradient(100deg, rgb(25, 25, 25) 25%, rgb(40, 40, 40) 100%);
+}
+
+h1 {
+    position: relative;
+    font-family: Montserrat;
+    color: white;
+    font-size: 8em;
+    text-align: center;
 }
